@@ -1,0 +1,49 @@
+# Python 缓存与本地环境
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.conda/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# C/CUDA 与其他编译产物
+build/
+dist/
+CMakeFiles/
+CMakeCache.txt
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.lib
+*.a
+*.pdb
+
+# 本地密钥与配置
+.env
+.env.*
+!.env.example
+
+# 本地上游仓库、数据、模型和运行输出；保留目录占位文件
+/external/*
+!/external/.gitkeep
+/data/*
+!/data/.gitkeep
+/models/*
+!/models/.gitkeep
+/outputs/*
+!/outputs/.gitkeep
+
+# 编辑器与系统临时文件
+.idea/
+.vs/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.tmp
