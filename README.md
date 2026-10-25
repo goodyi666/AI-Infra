@@ -2,7 +2,7 @@
 
 用于整理 AI 基础设施学习项目、个人笔记、阅读资料和实验记录。
 
-当前仅搭建目录骨架；各项目尚未开始实现。已有的 [Python 学习笔记](notes/Python学习笔记.md) 保留在原位置。
+当前已整理 Python 基础与并发笔记，并添加练习示例。编程语言基础笔记放在 `notes/00-foundations/编程语言基础/`，包括 [Python 学习笔记](notes/00-foundations/编程语言基础/Python学习笔记.md) 和 [Python 并发与性能分析](notes/00-foundations/编程语言基础/Python并发与性能分析.md)。
 
 ## 目录结构
 
@@ -10,6 +10,7 @@
 AI-Infra/
 ├── README.md                       # 仓库入口与目录说明
 ├── projects/                       # 按开源项目组织的学习实践
+│   ├── 00-foundations/             # Python 基础、并发与性能测试练习
 │   ├── 01-nano-vllm/               # 轻量推理引擎，建议从这里开始
 │   ├── 02-triton/                  # GPU 算子编程
 │   ├── 03-vllm/                    # 推理服务与调度
@@ -18,8 +19,10 @@ AI-Infra/
 │   ├── 06-llama-cpp/               # C++ 推理与量化
 │   └── 07-sglang/                  # 推理缓存与服务优化
 ├── notes/                          # 按知识主题整理的笔记
-│   ├── Python学习笔记.md           # 原有笔记
 │   ├── 00-foundations/             # Python、C++、Linux、PyTorch 基础
+│   │   └── 编程语言基础/
+│   │       ├── Python学习笔记.md   # 函数、类、生成器等基础知识
+│   │       └── Python并发与性能分析.md # 并发模型与性能分析
 │   ├── 01-gpu-cuda/                # GPU 架构、CUDA 与访存
 │   ├── 02-kernels-compilers/       # Triton、算子优化与编译器
 │   ├── 03-inference/               # KV Cache、推理调度与量化
